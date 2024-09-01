@@ -1,4 +1,3 @@
-````markdown
 # Accountkitaab
 
 **Accountkitaab** is a file management web application that allows users to create, view, edit, and delete text-based files. This project was developed during the **Backend Domination** course at Sheryians Coding School, using **Express.js** for the backend and **EJS** for templating.
@@ -10,7 +9,7 @@
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
-- [Website Images](#Website-images)
+- [Website Images](#website-images)
 - [License](#license)
 
 ## Features
@@ -41,7 +40,6 @@ Before you begin, ensure you have the following installed on your local machine:
 git clone https://github.com/Aditya-Pawar-1/accountkitaab.git
 cd accountkitaab
 ```
-````
 
 ### Install Dependencies
 
@@ -87,6 +85,17 @@ accountkitaab/
 ```
 
 ## Website-images
+Home Page
+![Home Page](https://github.com/user-attachments/assets/f3784edc-4265-4c0b-9c66-dc16b7917c95)
+
+Create Page
+![Create Page](https://github.com/user-attachments/assets/d6bc87a2-37ac-4e95-af3c-81b7e76dfdcb)
+
+View Page
+![View Page](https://github.com/user-attachments/assets/aefc5376-8f79-46c8-b0d7-92c7e2da7165)
+
+Edit Page
+![Edit Page](https://github.com/user-attachments/assets/64091aa3-07f4-4bcf-a6ca-2e92553011de)
 
 ## License
 
