@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>create</title>
+  </head>
+  <body class="bg-blue-100">
+    <nav class="flex justify-between items-center m-4 p-2">
+      <h1 class="font-bold text-5xl">AccountKitaab</h1>
+      <div class="flex justify-between m-4 p-2 gap-4">
+        <a href="/">Home</a>
+        <a href="/create">Create New Hisab</a>
+      </div>
+    </nav>
+
+    <form action="/create/<%= date %>" method="post">
+      <div id="create" class="flex flex-col max-w-screen-md m-4 gap-4">
+        <h2 class="font-semibold">Creating New Hisab for <%= date%></h2>
+        <textarea
+          name="data"
+          id="data"
+          rows="10"
+          cols="50"
+          placeholder="sugar, tea, biscuits..."
+          class="bg-gray-100 outline-none"
+        ></textarea>
+        <button
+          class="w-64 bg-blue-600 px-2 py-3 rounded-lg text-white font-semibold"
+          type="submit"
+        >
+          Create New Hisab
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

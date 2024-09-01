@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>edit</title>
+  </head>
+  <body class="bg-blue-100">
+    <nav class="flex justify-between items-center m-4 p-2">
+      <h1 class="font-bold text-5xl">AccountKitaab</h1>
+      <div class="flex justify-between m-4 p-2 gap-4">
+        <a href="/">Home</a>
+        <a href="/create">Create New Hisab</a>
+      </div>
+    </nav>
+
+    <div class="m-4 p-2">
+      <h2 class="font-semibold text-2xl mb-4">
+        You are viewing Hisab of <%= filename%>
+      </h2>
+      <div style="width: 60vw; min-height: 50vh" class="bg-gray-100 text-lg">
+        <%= data%>
+      </div>
+      <div class="mt-6">
+        <a
+          href="/edit/<%= filename%>"
+          class="bg-blue-600 px-7 py-3 rounded-lg text-white font-semibold"
+        >
+          Edit <i class="ri-file-edit-fill ri-lg"></i
+        ></a>
+        <a
+          href="/delete/<%= filename%>"
+          class="bg-blue-600 px-7 py-3 rounded-lg text-white font-semibold"
+        >
+          Delete <i class="ri-delete-bin-fill ri-xl"></i
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>
